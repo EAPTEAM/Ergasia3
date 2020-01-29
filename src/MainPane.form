@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainPane">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-13145713"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="5784a" class="javax.swing.JLabel" binding="topBanner">
+        <constraints border-constraint="North"/>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <grid id="6044e" binding="centerUI" layout-manager="GridLayoutManager" row-count="8" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="5" left="5" bottom="5" right="5"/>
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-13145713"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="51afb" class="javax.swing.JLabel" binding="countrySelectorLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-13145713"/>
+              <foreground color="-1"/>
+              <text value="Select Country:"/>
+            </properties>
+          </component>
+          <component id="12832" class="javax.swing.JComboBox" binding="countrySelector">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="2fded" class="javax.swing.JButton" binding="fetchDataButton">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-2784976"/>
+              <foreground color="-1"/>
+              <label value="Fetch Data"/>
+              <text value="Fetch Data"/>
+            </properties>
+          </component>
+          <component id="e50d8" class="javax.swing.JLabel" binding="gdpDataLabel">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="GDP DATA Dataset Name:"/>
+            </properties>
+          </component>
+          <component id="3ed6e" class="javax.swing.JTextField" binding="gdpDataCountry">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="d4b23" class="javax.swing.JLabel" binding="oilDataLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="OIL DATA Dataset Name:"/>
+            </properties>
+          </component>
+          <component id="6809" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="6a392" class="javax.swing.JLabel" binding="oilAvailableTimespanLabel">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="Available Timespan"/>
+            </properties>
+          </component>
+          <component id="6e830" class="javax.swing.JLabel" binding="gdpAvailableTimespanLabel">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="Available Timespan"/>
+            </properties>
+          </component>
+          <component id="7c0cb" class="javax.swing.JTable" binding="gdpTable">
+            <constraints>
+              <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="e9cc0" class="javax.swing.JLabel" binding="oilRange">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="Start Date:"/>
+            </properties>
+          </component>
+          <component id="c9204" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="Start Date:"/>
+            </properties>
+          </component>
+          <component id="46a65" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="End Date:"/>
+            </properties>
+          </component>
+          <component id="87638" class="javax.swing.JTable" binding="oilTable">
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="53071" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1"/>
+              <text value="End Date:"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="c3fa5" binding="bottomButtons" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties>
+          <background color="-13145713"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="4914d" class="javax.swing.JButton" binding="saveButton">
+            <constraints/>
+            <properties>
+              <background color="-2784976"/>
+              <foreground color="-1"/>
+              <label value="Save"/>
+              <text value="Save"/>
+            </properties>
+          </component>
+          <component id="bdca" class="javax.swing.JButton" binding="plotButton">
+            <constraints/>
+            <properties>
+              <background color="-2784976"/>
+              <foreground color="-1"/>
+              <label value="Plot"/>
+              <text value="Plot"/>
+            </properties>
+          </component>
+          <component id="8abc7" class="javax.swing.JButton" binding="deleteButton">
+            <constraints/>
+            <properties>
+              <background color="-2679001"/>
+              <foreground color="-1"/>
+              <text value="DELETE ALL"/>
+            </properties>
+          </component>
+          <component id="10bba" class="javax.swing.JCheckBox" binding="checkBox">
+            <constraints/>
+            <properties>
+              <background color="-13145713"/>
+              <foreground color="-1"/>
+              <label value="Allready in Database"/>
+              <text value="Allready in Database"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
